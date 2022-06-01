@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            background-color: #2c3e50;
+        }
+
+        .nav {
+            background-color: #5468ff;
+            padding: 5px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            left: 10px;
+            text-align: center;
+            font-size: 17px;
+            word-spacing: 2px;
+            border-radius: 10px;
+        }
+
+        #nav {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: inline;
+            transition: all 0.3s ease 0s;
+        }
+
+        #nav:hover {
+            background-color: #5468ff;
+            color: black;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            align-items: center;
+            appearance: none;
+            background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+            border: 0;
+            border-radius: 6px;
+            box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline;
+            font-family: "JetBrains Mono", monospace;
+            width: 95px;
+            height: 48px;
+            justify-content: center;
+            line-height: 1;
+            list-style: none;
+            overflow: hidden;
+            padding-left: 16px;
+            padding-right: 16px;
+            position: relative;
+            text-align: left;
+            text-decoration: none;
+            transition: box-shadow .15s, transform .15s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            will-change: box-shadow, transform;
+            font-size: 18px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-top: 100px;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li id="nav"><a href="index.html">Home</a></li>
+                <li id="nav"><a href="About.html">About</a></li>
+                <li id="nav"><a href="skills.html">Skills</a></li>
+                <li id="nav">Contact</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <h3>Contact</h3>
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="messgae">Message</label>
+            <textarea id="messgae" name="message" placeholder="Write something.." style=height:200px></textarea>
+
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+
+</html>
